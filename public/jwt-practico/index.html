@@ -19,26 +19,26 @@
               Mini taller Jwt
             </h3>
           </div>
-            <div class="col-md-6 d-block">
-                <form>
+            <div id="formWrapper" class="col-md-6" style="display: block;">
+                <form id="formulario">
                     <div class="form-group">
                       <label for="exampleInputEmail1">Email address</label>
-                      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                      <input type="email" class="form-control" id="inputEmail" aria-describedby="emailHelp">
                     </div>
                     <div class="form-group">
                       <label for="exampleInputPassword1">Password</label>
-                      <input type="password" class="form-control" id="exampleInputPassword1">
+                      <input type="password" class="form-control" id="inputPass">
                     </div>
                     <button type="submit" class="btn btn-primary">Submit</button>
                   </form>
             </div>
-            <div class="col-md-12 d-none"><table class="table">
+            <div id="tableWrapper" class="col-md-12" style="display: none;">
+              <table id="tablaInfo" class="table">
                 <thead>
                   <tr>
-                    <th scope="col">#</th>
-                    <th scope="col">First</th>
-                    <th scope="col">Last</th>
-                    <th scope="col">Handle</th>
+                    <th scope="col">Number</th>
+                    <th scope="col">Title</th>
+                    <th scope="col">Body</th>
                   </tr>
                 </thead>
                 <tbody>
@@ -47,6 +47,30 @@
             </div>
         </div>
     </div>
+
+    <button type="button" id="modalButton" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Open Modal</button>
+
+    <!-- Modal -->
+    <div class="modal fade" id="myModal" role="dialog">
+      <div class="modal-dialog">
+      
+        <!-- Modal content-->
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+            <h4 class="modal-title">Modal Header</h4>
+          </div>
+          <div id="modalContent" class="modal-body">
+            <p>Some text in the modal.</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+    
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
